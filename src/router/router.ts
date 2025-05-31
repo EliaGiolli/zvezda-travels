@@ -8,6 +8,7 @@ const Blog = () => import('../views/Blog.vue');
 const BlogPost = () => import('../views/BlogPost.vue');
 const Packages = () => import('../views/Packages.vue');
 const PackagesDetails = () => import('../views/PackagesDetails.vue');
+const Metro = () => import('../views/Metro.vue')
 
 //layouts
 import RootLayout from "../layouts/RootLayout.vue";
@@ -20,7 +21,8 @@ const routes: RouteRecordRaw[] = [
         component: RootLayout,
         children: [
             { path: '', component: Home },
-            { path: 'contacts', component: Contacts }
+            { path: 'contacts', component: Contacts },
+            { path: 'metro', component: Metro}
         ]
     },
     {
